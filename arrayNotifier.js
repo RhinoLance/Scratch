@@ -11,7 +11,7 @@ var ArrayNotifier = {
 	set: function(key, val) {
 		_storage[key] = val;
 		
-		if( ArrayNotifier.callback ) {ArrayNotifier.callback(val);}
+		if( ArrayNotifier.callback ) {ArrayNotifier.callback(key, val);}
 	}
 }
 
