@@ -20,7 +20,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 var onDeviceReady = function() {
 	
 	ArrayNotifier.callback = function(key,val) {
-		alert('key + ' is now set to ' + val);
+		alert(key + ' is now set to ' + val);
 	};
 
 	var updateVolume = function() {
